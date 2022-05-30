@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Lato, sans-serif;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #222222;
+}
+
+.top_header {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 18px;
+	padding-bottom: 20px;
+}
+
+.top_box {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.top_box_1 {
+	height: 38px;
+	width: 111px;
+}
+
+.top_box_2 {
+	height: 38px;
+	width: 168px;
+}
+
+.brands {
+	background: #F1E4E6;
+}
+
+.brands_box {
+	width: 1600px;
+	min-height: 764px;
+	background-image: url(img/1-page/brands\ man.png);
+	background-repeat: no-repeat;
+}
+
+.brands_text {
+	width: 405px;
+	height: 93px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 864px;
+	padding-top: 290px;
+}
+
+.brands__line {
+	width: 12px;
+	height: 92px;
+	background-color: #F16D7F;
+}
+
+.brands_box_text {
+	font-weight: 900;
+	font-size: 48px;
+	line-height: 58px;
+	color: #222222;
+}
+
+.of-luxerious-fasion {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 38px;
+}
+
+.fasion-color {
+	color: #F16D7F;
+}
+
+.for_box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 65px;
+	padding-bottom: 96px;
+}
+
+.card {
+	width: 360px;
+	height: 260px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card_4 {
+	width: 1140px;
+	height: 180px;
+	background-image: url(img/1-page/luxirous.jpg);
+	background-repeat: no-repeat;
+	margin-top: 30px;
+}
+
+.card-1 {
+	background-image: url(img/1-page/for_woman.jpg);
+	background-repeat: no-repeat;
+}
+
+.card-2 {
+	background-image: url(img/1-page/for_man.jpg);
+	background-repeat: no-repeat;
+}
+
+.card-3 {
+	background-image: url(img/1-page/for_kids.jpg);
+	background-repeat: no-repeat;
+}
+
+.for {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: #F16D7F;
+}
+
+.card_text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.card_long_text {
+	text-align: center;
+	padding: 65px 480px 65px 480px;
+}
