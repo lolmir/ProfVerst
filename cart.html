@@ -16,7 +16,7 @@
 <body>
 	<header class="header">
 		<div class="container top_header">
-			<nav class="top_box_1">
+			<div class="top_box_1">
 				<ul class="top_box">
 					<li class="logo">
 						<a href="index.html"> <img src="img/top-header/logo.svg" alt="logo">
@@ -26,8 +26,8 @@
 						</a>
 					</li>
 				</ul>
-			</nav>
-			<nav class="top_box_2">
+			</div>
+			<div class="top_box_2">
 				<ul class="top_box">
 					<li class="menu_top_box">
 						<a class="menu-link-img" href="#"> <img class="menu-img" src="img/top-header/menu.svg"
@@ -69,49 +69,69 @@
 						</a>
 					</li>
 				</ul>
-			</nav>
+			</div>
 		</div>
 	</header>
 	<div class="heading">
 		<div class="container heading-box">
-			<p class="heading-text">REGISTRATION</p>
+			<p class="heading-text">SHOPPING CART</p>
 		</div>
 	</div>
-	<div class="container registration">
-		<form class="reg-form" action="#">
-			<p class="reg-heding">Your Name</p>
-			<input class="reg-field " type="text" placeholder="First Name">
-			<input class="reg-field" type="text" placeholder="Last Name">
-			<div class="radio-box">
-				<div class="form_radio">
-					<input class="radio-input" id="radio-1" type="radio" name="radio" value="1" checked>
-					<label for="radio-1">Male</label>
+	<div class="container">
+		<div class="cart-box">
+			<section class="cart">
+				<div class="cart__item">
+					<img class="cart__item__close" src="img/top-header/close.svg" alt="close">
+					<img class="cart__item__pic" src="img/catalog/pic3.png" alt="pic3">
+					<div class="cart__item__disc">
+						<h3 class="cart__heading">MANGO PEOPLE<br>T-SHIRT</h3>
+						<ul class="cart__disc">
+							<li class="cart__disc__item">Price: <span class="cart__disc__price">$300</span></li>
+							<li class="cart__disc__item">Color: Red</li>
+							<li class="cart__disc__item">Size: Xl</li>
+							<li class="cart__disc__item">Quantity:</li>
+						</ul>
+					</div>
 				</div>
-				<div class="form_radio">
-					<input class="radio-input" id="radio-2" type="radio" name="radio" value="2">
-					<label for="radio-2">Female</label>
+				<div class="cart__item">
+					<img class="cart__item__close" src="img/top-header/close.svg" alt="close">
+					<img class="cart__item__pic" src="img/catalog/pic7.png" alt="pic7">
+					<div class="cart__item__disc">
+						<h3 class="cart__heading">MANGO PEOPLE<br>T-SHIRT</h3>
+						<ul class="cart__disc">
+							<li class="cart__disc__item">Price: <span class="cart__disc__price">$300</span></li>
+							<li class="cart__disc__item">Color: Red</li>
+							<li class="cart__disc__item">Size: Xl</li>
+							<li class="cart__disc__item">Quantity:</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<p class="reg-heding">Login details</p>
-			<input class="reg-field" type="email" placeholder="Email">
-			<input class="reg-field" type="password" placeholder="Password">
-			<p class="reg-disc">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
-				lowercase letters</p>
-			<button type="submit" class="join">JOIN NOW <img class="join__arrow" src="img/registration/arrow.svg"
-					alt="arrow"></button>
-		</form>
-		<div class="loyalty-box">
-			<p class="loyalty-text">LOYALTY HAS ITS PERKS</p>
-			<p class="loyalty-text">Get in on the loyalty program where you can earn points and unlock serious
-				perks.
-				Starting with these as soon as you join:</p>
-			<ul class="loyalty-info">
-				<li class="loyalty-point">15% off welcome offer</li>
-				<li class="loyalty-point">Free shipping, returns and exchanges on all orders</li>
-				<li class="loyalty-point">$10 off a purchase on your birthday</li>
-				<li class="loyalty-point">Early access to products</li>
-				<li class="loyalty-point">Exclusive offers & rewards</li>
-			</ul>
+				<div class="cart__button__box">
+					<button type="submit" class="cart__button">CLEAR SHOPPING CART</button>
+					<button type="submit" class="cart__button">CONTINUE SHOPPING</button>
+				</div>
+			</section>
+			<section class="form-cart">
+				<form class="reg-form" action="#">
+					<p class="reg-heding">SHIPPING ADRESS</p>
+					<input class="reg-field" type="text" placeholder="Bangladesh">
+					<input class="reg-field reg-field_black" type="text" placeholder="State">
+					<input class="reg-field reg-field_black" type="text" placeholder="Postcode / Zip">
+				</form>
+				<button type="submit" class="form-cart__button">GET A QUOTE</button>
+				<div class="cart__purchase-box">
+					<ul class="cart__total">
+						<li class="cart__sub-total">
+							<pre>SUB TOTAL    $900</pre>
+						</li>
+						<li class="cart__grand-total">
+							<pre>GRAND TOTAL    <span class="cart-total__span">$900</span></pre>
+						</li>
+					</ul>
+					<div class="cart-total__line"></div>
+					<button type="submit" class="cart__total__button">PROCEED TO CHECKOUT</button>
+				</div>
+			</section>
 		</div>
 	</div>
 	<footer class="footer">
@@ -126,9 +146,8 @@
 				</figure>
 				<div class="form-action">
 					<form action="#">
-						<h4 class="h4">SUBSCRIBE
-							<h4 class="action-span">FOR OUR NEWLETTER AND
-								PROMOTION</h4>
+						<h4 class="h4">SUBSCRIBE <br> <span class="action-span">FOR OUR NEWLETTER AND
+								PROMOTION</span>
 						</h4>
 						<div class="email-form">
 							<input class="fill" type="email" placeholder="Enter Your Email">

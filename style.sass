@@ -6,6 +6,7 @@ $color-site: #F16D7F
 
 @import "aferta.sass"
 @import "product.sass"
+@import "cart.sass"
 
 body
 	font-family: Lato, sans-serif
@@ -103,20 +104,21 @@ body
 	max-width: 1600px
 	display: flex
 	align-items: center
-	justify-content: space-between
+	justify-content: center
+
+.banner__img
+	width: 50%
 
 .brands_box
 	height: 100%
-	justify-content: space-between
-	padding-right: 331px
-	border-left: 12px solid $color-site
-	padding-left: 16px
 
 .brands_text
 	font-weight: 900
 	font-size: 48px
 	line-height: 58px
 	color: #222222
+	border-left: 12px solid $color-site
+	padding-left: 16px
 
 .of-luxerious-fasion
 	font-weight: 700
@@ -431,9 +433,20 @@ body
 .reg-field
 	display: block
 	margin-top: 20px
-	width: 100%
 	padding: 12px
 	border: 1px solid #A4A4A4
+
+.reg-field::-webkit-input-placeholder
+	color: #B1B1B1
+
+.reg-field::-moz-placeholder
+	color: #B1B1B1
+
+.reg-field:-moz-placeholder
+	color: #B1B1B1
+
+.reg-field:-ms-input-placeholder
+	color: #B1B1B1
 
 .reg-disc
 	margin-top: 15px
@@ -475,10 +488,10 @@ label
 	color: $color-site
 	background-color: #FFFFFF
 
-.join:hover .arrow
+.join:hover .join__arrow
 	color: $color-site
 
-.arrow
+.join__arrow
 	margin-left: 20px
 
 .loyalty-box
@@ -702,3 +715,101 @@ label
 	font-size: 14px
 	line-height: 17px
 	color: #636363
+
+@media screen and ( max-width: 768px )
+.container
+	padding: 2%
+.top_header
+	padding: 2%
+.banner_block
+	width: 100%
+	justify-content: center
+.banner__img
+	width: 50%
+.brands_box
+	padding-right: 0
+	justify-content: center
+.brands_text
+	font-style: normal
+	font-weight: 900
+	font-size: 44px
+	line-height: 53px
+.of-luxerious-fasion
+	font-style: normal
+	font-weight: 700
+	font-size: 24px
+	line-height: 29px
+.aferta
+	margin: 0
+	height: 100%
+.for-box
+	margin-bottom: 20px
+.for-box__card
+	width: 32%
+.catalog-footer
+	margin-top: 0
+.footer-info
+	flex-direction: column
+	padding: 48px
+	align-items: center
+.info-box
+	padding-bottom: 48px
+.footer_form
+	background-size: cover
+.footer_form_box
+	flex-direction: column
+	align-items: center
+	padding-top: 64px
+	padding-bottom: 140px
+.figure
+	margin-bottom: 48px
+
+@media screen and ( max-width: 375px )
+.container
+	padding: 2%
+.top_header
+	padding: 18px
+.top_box_2
+	align-items: center
+	display: flex
+	justify-content: flex-end
+.personal_acc, .basket, .banner__img
+	display: none
+.brands_box
+	padding: 148px 56px
+.brands_text
+	font-size: 38px
+	line-height: 46px
+.of-luxerious-fasion
+	font-size: 20px
+	line-height: 24px
+.aferta
+	margin-top: 64px
+	margin-bottom: 64px
+.for-box
+	flex-direction: column
+	margin-bottom: 0
+.for-box__card
+	width: 100%
+	margin-bottom: 32px
+.footer-info
+	padding-top: 48px
+	padding-bottom: 32px
+.footer_form
+	background-position: inherit
+.footer_form_box
+	padding-top: 64px
+	padding-bottom: 110px
+.h4
+	font-size: 24px
+	line-height: 37px
+	text-align: center
+.action-span
+	font-weight: 400
+	font-size: 14px
+	line-height: 22px
+.bottom
+	flex-direction: column-reverse
+.icon
+	margin-top: 40px
+	margin-bottom: 40px
