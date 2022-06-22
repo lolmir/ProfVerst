@@ -1,0 +1,46 @@
+.aferta
+    display: flex
+    flex-direction: column
+    height: 470px
+    justify-content: space-between
+    margin-top: 65px
+    margin-bottom: 96px
+
+.for-box
+    display: flex
+    justify-content: space-between
+
+    &__card
+        width: 30%
+        height: 100%
+
+    &__card_last
+        width: 100%
+
+.card
+    text-decoration: none
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: #FFFFFF
+    position: relative
+
+    &__text
+        position: absolute
+        text-align: center
+
+        &_span
+            font-style: normal
+            font-weight: 700
+            font-size: 24px
+            line-height: 28px
+            color: $color-site
+
+.for-card
+    width: 100%
+
+.card:hover .for-card
+    filter: brightness(30%)
