@@ -1405,162 +1405,184 @@ label {
   color: #636363;
 }
 
-.container {
-  padding: 2%;
-}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2%;
+  }
 
-.top_header {
-  padding: 2%;
-}
+  .top_header {
+    padding: 2%;
+  }
 
-.banner_block {
-  width: 100%;
-  justify-content: center;
-}
+  .mega-box {
+    top: 40px;
+    left: 11px;
+    width: 140px;
+  }
 
-.banner__img {
-  width: 50%;
-}
+  .close-mega-menu {
+    margin-left: 112px;
+  }
 
-.brands_box {
-  padding-right: 0;
-  justify-content: center;
-}
+  .banner_block {
+    width: 100%;
+    justify-content: center;
+  }
 
-.brands_text {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 53px;
-}
+  .banner__img {
+    width: 50%;
+  }
 
-.of-luxerious-fasion {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-}
+  .brands_box {
+    padding-right: 0;
+    justify-content: center;
+  }
 
-.aferta {
-  margin: 0;
-  height: 100%;
-}
+  .brands_text {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+  }
 
-.for-box {
-  margin-bottom: 20px;
-}
+  .of-luxerious-fasion {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
 
-.for-box__card {
-  width: 32%;
-}
+  .aferta {
+    margin: 0;
+    height: 100%;
+  }
 
-.catalog-footer {
-  margin-top: 0;
-}
+  .for-box {
+    margin-bottom: 20px;
+  }
 
-.footer-info {
-  flex-direction: column;
-  padding: 48px;
-  align-items: center;
-}
+  .for-box__card {
+    width: 32%;
+  }
 
-.info-box {
-  padding-bottom: 48px;
-}
+  .catalog-footer {
+    margin-top: 0;
+  }
 
-.footer_form {
-  background-size: cover;
-}
+  .footer-info {
+    flex-direction: column;
+    padding: 48px;
+    align-items: center;
+  }
 
-.footer_form_box {
-  flex-direction: column;
-  align-items: center;
-  padding-top: 64px;
-  padding-bottom: 140px;
-}
+  .info-box {
+    padding-bottom: 48px;
+  }
 
-.figure {
-  margin-bottom: 48px;
-}
+  .footer_form {
+    background-size: cover;
+  }
 
-.container {
-  padding: 2%;
-}
+  .footer_form_box {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 140px;
+  }
 
-.top_header {
-  padding: 18px;
+  .figure {
+    margin-bottom: 48px;
+  }
 }
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 2%;
+  }
 
-.top_box_2 {
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
-}
+  .top_header {
+    padding: 18px;
+  }
 
-.personal_acc, .basket, .banner__img {
-  display: none;
-}
+  .top_box_2 {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
 
-.brands_box {
-  padding: 148px 56px;
-}
+  .menu-link-img {
+    padding-bottom: 25px;
+  }
 
-.brands_text {
-  font-size: 38px;
-  line-height: 46px;
-}
+  .mega-box {
+    top: 50px;
+    left: -90px;
+  }
 
-.of-luxerious-fasion {
-  font-size: 20px;
-  line-height: 24px;
-}
+  .personal_acc, .basket, .banner__img {
+    display: none;
+  }
 
-.aferta {
-  margin-top: 64px;
-  margin-bottom: 64px;
-}
+  .brands_box {
+    padding: 148px 0 148px 0;
+  }
 
-.for-box {
-  flex-direction: column;
-  margin-bottom: 0;
-}
+  .brands_text {
+    font-size: 38px;
+    line-height: 46px;
+  }
 
-.for-box__card {
-  width: 100%;
-  margin-bottom: 32px;
-}
+  .of-luxerious-fasion {
+    font-size: 20px;
+    line-height: 24px;
+  }
 
-.footer-info {
-  padding-top: 48px;
-  padding-bottom: 32px;
-}
+  .aferta {
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
 
-.footer_form {
-  background-position: inherit;
-}
+  .for-box {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 
-.footer_form_box {
-  padding-top: 64px;
-  padding-bottom: 110px;
-}
+  .for-box__card {
+    width: 100%;
+    margin-bottom: 32px;
+  }
 
-.h4 {
-  font-size: 24px;
-  line-height: 37px;
-  text-align: center;
-}
+  .footer-info {
+    padding-top: 48px;
+    padding-bottom: 32px;
+  }
 
-.action-span {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-}
+  .footer_form {
+    background-position: inherit;
+  }
 
-.bottom {
-  flex-direction: column-reverse;
-}
+  .footer_form_box {
+    padding-top: 64px;
+    padding-bottom: 110px;
+  }
 
-.icon {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  .h4 {
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+  }
+
+  .action-span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .bottom {
+    flex-direction: column-reverse;
+  }
+
+  .icon {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
