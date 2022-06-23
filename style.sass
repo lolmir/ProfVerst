@@ -599,7 +599,7 @@ label
 	z-index: 1
 
 .filter-summary
-	display: block
+	display: flex
 	font-style: normal
 	font-weight: 600
 	font-size: 14px
@@ -673,7 +673,8 @@ label
 
 .filter-choice
 	display: flex
-	width: 300px
+	width: 310px
+	position: relative
 
 .choice-deltails
 	position: absolute
@@ -753,6 +754,14 @@ label
 
 .pagination-link:hover
 	color: $color-site
+	animation: zoom 0.5s ease 0s 1 normal forwards
+	@keyframes zoom
+		0%
+			box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)
+			transform: scale(1)
+		100%
+			box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35)
+			transform: scale(1.1)
 
 .crumb
 	display: flex
@@ -837,6 +846,28 @@ label
 		padding-bottom: 140px
 	.figure
 		margin-bottom: 48px
+	.catalog-item_flex
+		display: none
+	.product__filter-choice
+		width: 570px
+	.cart-box
+		flex-wrap: wrap
+		margin-top: 59px
+		margin-bottom: 128px
+	.cart
+		width: 100%
+		margin-bottom: 64px
+	.cart__button__box
+		justify-content: space-around
+		margin-top: 62px
+	.form-cart
+		display: flex
+		justify-content: space-between
+		width: 100%
+	.reg-form, .cart__purchase-box
+		width: 49%
+	.cart__purchase-box
+		margin-top: 40px
 
 @media screen and ( max-width: 375px )
 	.container
@@ -852,6 +883,7 @@ label
 	.mega-box
 		top: 50px
 		left: -90px
+		z-index: 2
 	.personal_acc, .basket, .banner__img
 		display: none
 	.brands_box
@@ -892,3 +924,36 @@ label
 	.icon
 		margin-top: 40px
 		margin-bottom: 40px
+	.heading-box
+		justify-content: center
+	.heading-text_product
+		display: none
+	.filter-details
+		z-index: 2
+	.filter-box-mini
+		width: 200px
+	.filter-mini-details
+		width: 150px
+	.filter-summary__p
+		display: none
+	.filter-summary::after
+		margin-left: 0
+	.filter-summary
+		padding-left: 0
+	.catalog-filter
+		margin-top: 24px
+		margin-bottom: 32px
+	.choise-summary
+		font-weight: 400
+		font-size: 12px
+		line-height: 14px
+	.filter-choice
+		right: 290px
+	.details-absolute-2
+		margin-left: 130px
+	.details-absolute-3
+		margin-left: 190px
+	.choice-box
+		padding: 0px 10px 10px
+	.choice-checkbox
+		margin-right: 5px
