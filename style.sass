@@ -585,10 +585,9 @@ label
 
 .catalog-filter
 	display: flex
-	justify-content: space-between
 	margin-top: 51px
 	margin-bottom: 64px
-	width: 700px
+	width: 100%
 
 .filter-box
 	display: flex
@@ -673,8 +672,9 @@ label
 
 .filter-choice
 	display: flex
-	width: 310px
+	width: 100%
 	position: relative
+	left: 117px
 
 .choice-deltails
 	position: absolute
@@ -848,8 +848,8 @@ label
 		margin-bottom: 48px
 	.catalog-item_flex
 		display: none
-	.product__filter-choice
-		width: 570px
+	.filter-choice
+		left: 170px
 	.cart-box
 		flex-wrap: wrap
 		margin-top: 59px
@@ -868,6 +868,13 @@ label
 		width: 49%
 	.cart__purchase-box
 		margin-top: 40px
+	.product
+		height: 1134px
+		margin-bottom: 129px
+	.carousel-wrapper
+		height: 624px
+	.product__desc
+		top: 624px
 
 @media screen and ( max-width: 375px )
 	.container
@@ -926,6 +933,10 @@ label
 		margin-bottom: 40px
 	.heading-box
 		justify-content: center
+	.heading-box_catalog
+		flex-direction: column
+	.heading-text_catalog
+		padding-bottom: 32px
 	.heading-text_product
 		display: none
 	.filter-details
@@ -948,12 +959,23 @@ label
 		font-size: 12px
 		line-height: 14px
 	.filter-choice
-		right: 290px
+		left: -77px
 	.details-absolute-2
 		margin-left: 130px
+		width: 50px
 	.details-absolute-3
 		margin-left: 190px
+		width: 60px
+	.choice-label
+		font-size: 10px
 	.choice-box
 		padding: 0px 10px 10px
 	.choice-checkbox
 		margin-right: 5px
+	.product
+		height: 974px
+		margin-bottom: 129px
+	.carousel-wrapper
+		height: 454px
+	.product__desc
+		top: 454px
