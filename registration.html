@@ -16,18 +16,20 @@
 <body>
 	<header class="header">
 		<div class="container top_header">
-			<nav class="top_box_1">
+			<div class="top_box_1">
 				<ul class="top_box">
 					<li class="logo">
-						<a href="index.html"> <img src="img/top-header/logo.svg" alt="logo">
+						<a class="logo__link" href="index.html"> <img class="logo__img" src="img/top-header/logo.svg"
+								alt="logo">
 						</a>
 					</li>
-					<li class="search"> <a href="#"> <img src="img/top-header/search.svg" alt="search">
+					<li class="search"> <a class="search__link" href="#"> <img class="search__img"
+								src="img/top-header/search.svg" alt="search">
 						</a>
 					</li>
 				</ul>
-			</nav>
-			<nav class="top_box_2">
+			</div>
+			<div class="top_box_2">
 				<ul class="top_box">
 					<li class="menu_top_box">
 						<a class="menu-link-img" href="#"> <img class="menu-img" src="img/top-header/menu.svg"
@@ -63,13 +65,15 @@
 						</nav>
 					</li>
 					<li class="personal_acc">
-						<a href="registration.html"> <img src="img/top-header/personal_acc.svg" alt="personal_acc">
+						<a href="registration.html"> <img class="personal_acc__img"
+								src="img/top-header/personal_acc.svg" alt="personal_acc">
 					</li>
-					<li><a href="cart.html"> <img src="img/top-header/basket_group.svg" alt="basket">
+					<li class="basket"><a href="cart.html"> <img class="basket__img"
+								src="img/top-header/basket_group.svg" alt="basket">
 						</a>
 					</li>
 				</ul>
-			</nav>
+			</div>
 		</div>
 	</header>
 	<div class="heading">
@@ -115,6 +119,34 @@
 		</div>
 	</div>
 	<footer class="footer">
+		<header class="footer-top">
+			<div class="container footer-info">
+				<section class="info-box">
+					<img class="info-box-img" src="img/footer/delivery.svg" alt="delivery">
+					<h3 class="info-box-h3">Free Delivery</h3>
+					<p class="info-box-text">Worldwide delivery on all. Authorit tively morph next-generation innov
+						tion
+						with extensive models.
+					</p>
+				</section>
+				<section class="info-box">
+					<img class="info-box-img" src="img/footer/sales.svg" alt="sales">
+					<p class="info-box-h3">Sales & discounts</p>
+					<p class="info-box-text">Worldwide delivery on all. Authorit tively morph next-generation innov
+						tion
+						with extensive models.
+					</p>
+				</section>
+				<section class="info-box">
+					<img class="info-box-img" src="img/footer/assurance.svg" alt="delivery">
+					<p class="info-box-h3">Quality assurance</p>
+					<p class="info-box-text">Worldwide delivery on all. Authorit tively morph next-generation innov
+						tion
+						with extensive models.
+					</p>
+				</section>
+			</div>
+		</header>
 		<div class="footer_form">
 			<div class="container footer_form_box">
 				<figure class="figure">
@@ -126,9 +158,8 @@
 				</figure>
 				<div class="form-action">
 					<form action="#">
-						<h4 class="h4">SUBSCRIBE
-							<h4 class="action-span">FOR OUR NEWLETTER AND
-								PROMOTION</h4>
+						<h4 class="h4">SUBSCRIBE <br> <span class="action-span">FOR OUR NEWLETTER AND
+								PROMOTION</span>
 						</h4>
 						<div class="email-form">
 							<input class="fill" type="email" placeholder="Enter Your Email">
