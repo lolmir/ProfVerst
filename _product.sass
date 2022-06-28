@@ -1,0 +1,281 @@
+.product
+	height: 1400px
+
+.carousel-wrapper
+	height: 777px
+	position: relative
+	background: #F7F7F7
+
+.carousel-item
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	padding: 25px50px
+	opacity: 0
+	transition: all 0.5s ease-in-out
+	display: flex
+	justify-content: center
+
+.arrow
+	position: absolute
+	top: 0
+	display: block
+	width: 50px
+	height: 100%
+	-webkit-tap-highlight-color: #0c0c0c00
+	&.arrow-prev
+		background: url("img/catalog/arrow-left.svg") 50% 50%/20px no-repeat
+		left: 0
+	&.arrow-next
+		right: 0
+		background: url("img/catalog/arrow-right.svg") 50% 50%/20px no-repeat
+		&.light
+			color: white
+
+.arrow:active
+	background: url("img/product/arrow-right-pink.svg") 50% 50%/20px no-repeat
+
+[id^="target-item"]
+	display: none
+
+.item-1
+	z-index: 2
+	opacity: 1
+
+*:target~.item-1
+	opacity: 0
+
+#target-item-1:target~.item-1
+	opacity: 1
+
+#target-item-2:target~.item-2,#target-item-3:target~.item-3
+	z-index: 3
+	opacity: 1
+
+.product__desc
+	width: 1010px
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding: 65px
+	border: 1px solid #EAEAEA
+	position: absolute
+	top: 730px
+	background-color: #FFFFFF
+	z-index: 10
+	&_heading
+		font-style: normal
+		font-weight: 300
+		font-size: 14px
+		line-height: 17px
+		color: $color-site
+	&_name
+		font-style: normal
+		font-weight: 300
+		font-size: 18px
+		line-height: 22px
+		color: #4D4D4D
+	&_txt
+		font-style: normal
+		font-weight: 300
+		font-size: 14px
+		line-height: 17px
+		text-align: center
+		color: #5E5E5E
+		width: 555px
+		margin-top: 48px
+		margin-bottom: 32px
+	&_price
+		font-style: normal
+		font-weight: 300
+		font-size: 24px
+		line-height: 29px
+		color: $color-site
+	&_line
+		border: 1px solid $color-site
+		background-color: $color-site
+		width: 63px
+		margin: 12px
+	&_line-2
+		width: 640px
+		height: 0px
+		border: 0.5px solid #EAEAEA
+		background-color: #EAEAEA
+		margin: 65px
+
+.product__catalog-filter
+	display: flex
+	justify-content: space-between
+	margin-top: 51px
+	margin-bottom: 64px
+	width: 700px
+
+.filter-box
+	display: flex
+	width: 360px
+
+.filter-details
+	position: absolute
+	z-index: 1
+
+.filter-summary
+	display: block
+	font-style: normal
+	font-weight: 600
+	font-size: 14px
+	line-height: 17px
+	cursor: pointer
+	padding-left: 16px
+
+.filter-summary::-webkit-details-marker
+	display: none
+
+.filter-summary::after
+	content: url(img/catalog/filter.svg)
+	margin-left: 11px
+
+.filter-details[open]>.filter-summary::after
+	content: url(img/catalog/filter-open.svg)
+	margin-left: 11px
+
+.filter-details[open]>.filter-summary
+	color: #EF5B70
+	margin-bottom: 24px
+
+.filter-box-mini
+	width: 360px
+	background-color: #fff
+	box-shadow: 0px 0px 10px #6F6E6E
+	padding: 46px 0 1px 0
+	margin-top: -55px
+
+.filter-mini-details
+	width: 328px
+	margin: 0 0 16px 17px
+
+.filter-mini-summary
+	height: 37px
+	display: flex
+	align-items: center
+	border-left: 5px solid $color-site
+	padding-left: 11px
+	border-bottom: 1px solid #EBEBEB
+	cursor: pointer
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 17px
+	color: #6F6E6E
+
+.filter-mini-details[open]>.filter-mini-summary
+	color: $color-site
+
+.filter-mini-details:hover .filter-mini-summary
+	color: $color-site
+
+.filter-mini-li
+	list-style-type: none
+	padding-bottom: 11px
+
+.padding-li
+	padding-top: 24px
+
+.filter-mini-link
+	text-decoration: none
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 17px
+	color: #6F6E6E
+
+.filter-mini-link:hover
+	color: $color-site
+
+.filter-choice
+	display: flex
+
+.product__filter-choice
+	left: 0px
+
+.choice-deltails
+	position: absolute
+	z-index: 1
+	background-color: #FFFFFF
+
+.product__details-absolute-1
+	margin-left: 0
+
+.product__details-absolute-2
+	margin-left: 187px
+
+.product__details-absolute-3
+	margin-left: 363px
+
+.choise-summary
+	display: block
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 17px
+	color: #6F6E6E
+	cursor: pointer
+
+.choise-summary:-webkit-details-marker
+	display: none
+
+.choise-summary::after
+	content: url(img/catalog/arrow-down.svg)
+	padding-left: 10px
+
+.choice-deltails[open]>.choise-summary::after
+	content: url(img/catalog/arrow-down.svg)
+	padding-left: 10px
+
+.choice-box
+	display: flex
+	flex-direction: column
+	box-shadow: 0px 0px 10px #6F6E6E
+	margin-top: 5px
+	padding: 0px 30px 11px 9px
+
+.choice-label
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 16px
+	color: #6F6E6E
+	padding-top: 10px
+	cursor: pointer
+
+.choice-checkbox
+	margin-right: 9px
+	cursor: pointer
+
+.product-button
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	&_link
+		display: flex
+		justify-content: center
+		text-decoration: none
+		border: 1px solid $color-site
+		padding: 14px 38px 14px 38px
+		align-items: center
+	&_txt
+		font-style: normal
+		font-size: 16px
+		line-height: 19px
+		color: $color-site
+	&_img
+		margin-right: 20px
+
+.product-button_link:hover
+	border: 4px solid $color-site
+
+.product-button_link:hover .product-button_txt
+	font-weight: 600
